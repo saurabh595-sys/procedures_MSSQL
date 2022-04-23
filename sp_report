@@ -1,0 +1,7 @@
+create proc Report
+AS
+Begin
+select productName, categoryName,createdby
+from Product
+inner join category on category.categoryId=Product.categoryId
+End;
